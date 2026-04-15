@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    --kuch-bhi: block;
+}
+
+.hidden {
+    --kuch-bhi: none;
+}
+
+header {
+    background-color: yellow;
+    padding: 32px 48px;
+}
+
+main {
+    background-color: beige;
+    padding: 32px 48px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 32px;
+}
+
+footer {
+    background-color: yellow;
+    padding: 32px 48px;
+    color: brown;
+}
+
+.card {
+    padding: 24px;
+    background-color: cornsilk;
+    border: 1px solid brown;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+
+    img {
+        width: 125px;
+        min-height: 125px;
+    }
+}
+
+.loading-card {
+    display: var(--kuch-bhi);
+    background-color: #909090;
+    height: 175px;
+    width: 340px;
+}
